@@ -8,7 +8,7 @@ const Note = function(note) {
         
 };
 
-const table = "Survey";
+const table = "notes";
 
 Note.prototype.create = (newNote) =>{
         sql.query( `INSERT INTO ${table} SET ?`, newNote, (err, res) => {
