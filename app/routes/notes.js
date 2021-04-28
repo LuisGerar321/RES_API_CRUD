@@ -70,7 +70,7 @@ router.patch( "/:id", async (req, res) =>{
         
         if( title ){
 
-                // await foundNote.updateTitle(id, title)
+                await foundNote.updateTitle(id, title)
         };
         // if(body){
         //         await note.updateBody(id, body)

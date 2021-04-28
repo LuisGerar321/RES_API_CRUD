@@ -8,7 +8,7 @@ const Note = function(note) {
         
 };
 
-const table = "notes";
+const table = "Survey";
 
 Note.prototype.create = (newNote) =>{
         sql.query( `INSERT INTO ${table} SET ?`, newNote, (err, res) => {
@@ -117,7 +117,7 @@ Note.prototype.removeAll=  ()=>{
 Note.prototype.updateTitle = (id, title)=>{
         return new Promise( (resolve, reject)=> {
 
-                sql.query( `UPDATE ${table} SET title = ${title} WHERE idnew_table = ${id}`, (err, res)=>{
+                sql.query( `UPDATE ${table} SET title = '${title}' WHERE idnew_table = ${id}`, (err, res)=>{
                         if(err){
                                 console.log("error: ", err);
                                 resolve(false);
