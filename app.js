@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (request, response) =>{
         console.log("[TEST]");
-        response.send("Hello from HomePage.");
+        response.send("Welcome user, this is my API with an ending point of '/notes'. If you want to query all the data: '54.160.51.72/notes/', if you want to query a 'data 54.160.51.72/notes/:id'     .");
 })
 
 // set port, listen for requests
