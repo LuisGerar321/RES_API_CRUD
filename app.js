@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (request, response) =>{
         console.log("[TEST]");
-        response.send("Ending point of '/notes'. If you want to query all the data: '54.160.51.72/notes/', if you want to query a 'data 54.160.51.72/notes/:id'     .");
+        response.send("Ending point of '/notes'. If you want to query all the data: '54.160.51.72/notes/', if you want to query a 'data 54.160.51.72/notes/:id' LuisCamara.");
 })
 
 // set port, listen for requests
