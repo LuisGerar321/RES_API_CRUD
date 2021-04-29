@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #give permission for everything in the express-app directory
-sudo chmod -R 777 /home/ec2-user/express-app
+sudo chmod -R 777 /home/ubuntu/RES_API_CRUD
 
 #navigate into our working directory where we have all our github files
 cd /home/ubuntu/RES_API_CRUD
