@@ -72,7 +72,7 @@ Note.prototype.findAll = ( )=> {
                                 this.title =  null;
                                 this.body =  null;
                                 this.id =  null;
-                                resolve(err)
+                                resolve([])
                         }
                 });
         })
