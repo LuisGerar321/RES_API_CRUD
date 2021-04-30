@@ -1,12 +1,15 @@
 var express  = require('express');
 var bodyParser = require("body-parser");
 var userRouters =  require("./app/routes/notes.js");
+var cors = require("cors");
 
 
 const app = express();
+app.use(cors());
 const PORT = 3000; 
 
 app.use(bodyParser.json()); 
+
 
 // parse requests of content-type: application/json
 app.use("/notes", userRouters);
