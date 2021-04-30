@@ -11,10 +11,10 @@ router.get("/", async ( request, response )  =>{
         // response.send("Hello");
 
         const allNotes = new Note({title:null, body:null});
-        // await allNotes.findAll();
+        await allNotes.findAll();
 
-        // response.send(await allNotes.findAll());
-        response.send([ "test1", "Luis"  ])
+        response.send(await allNotes.findAll());
+        // response.send([ "test1", "Luis"  ])
 });
 router.post("/", (req, res ) => { //Fine
         console.log("POST ROUTE REACHED");
