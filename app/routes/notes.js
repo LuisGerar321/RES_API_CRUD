@@ -13,7 +13,8 @@ router.get("/", async ( request, response )  =>{
         const allNotes = new Note({title:null, body:null});
         // await allNotes.findAll();
 
-        response.send(await allNotes.findAll());
+        // response.send(await allNotes.findAll());
+        response.send([ "test1", "Luis"  ])
 });
 router.post("/", (req, res ) => { //Fine
         console.log("POST ROUTE REACHED");
