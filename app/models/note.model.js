@@ -60,7 +60,7 @@ Note.prototype.findAll = ( )=> {
                         }
                         //If I found the element
                         if(res.length){
-                                // console.log("notes: ",  res );
+                                console.log("notes: ",  res );
                                 
                                 const result = res.reduce( (accu = [], element)=> {
                                         accu =  [...accu].concat(element);
