@@ -1,5 +1,5 @@
 module.exports = {
-        HOST: "databaserestapi.cljdjonnvrvb.us-east-2.rds.amazonaws.com",
+        HOST: "luisrds.c3loblwczsa8.us-east-1.rds.amazonaws.com",
         USER: "admin",
         PASSWORD: "raspberry",
         DB: "luisdb"
